@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner1">
+        <item>Foster Home</item>
+        <item>Cloths donation</item>
+        <item>Blood donation</item>
+        <item>money donation</item>
+        <item>elder help</item>
+    </string-array>
+</resources>

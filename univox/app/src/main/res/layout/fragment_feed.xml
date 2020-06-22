@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/viewbydist"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellow"/>
+
+
+    <RelativeLayout
+        android:id="@+id/feedlayout"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_centerInParent="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mylistview"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"/>
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floating_action_button"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="86dp"
+                android:layout_gravity="right"
+                android:layout_margin="16dp"
+                app:backgroundTint="@color/skin"
+                app:elevation="10dp"
+                app:showMotionSpec="@anim/fragment_fade_enter"
+                app:srcCompat="@drawable/ic_add_black_24dp" />
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

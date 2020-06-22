@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name" translatable="false">univox</string>
+    <string name="title_activity_maps" translatable="false">googlemaps</string>
+
+    <!--main_activity-->
+    <string name="getstarted">Get started</string>
+    <string name="singout">Sign out</string>
+    <string name="changelang">change language</string>
+
+    <!--home_activity-->
+
+
+    <!--Help_activity-->
+    <string name="help">help</string>
+    <string name="connected">you are now connected to the user: </string>
+    <string name="clickonstart">please click on start to start broadcasting to the helper your current location,
+    if you wish to stop broadcasting to you helper you may click on stop, once you received help, please click on finished in order to gain credits both of you and your helper.</string>
+
+    <!--profile_activity-->
+    <string name="follow">follow</string>
+    <string name="message">message</string>
+    <string name="helped">helped</string>
+    <string name="following">following</string>
+    <string name="followers">followers</string>
+
+    <!--home_fragment-->
+
+    <string name="arroundyou">arround you</string>
+    <string name="profile">profile</string>
+
+    <!--sendpost_fragment-->
+    <string name="post">post</string>
+
+    <!--help_activity-->
+    <string name="start">start</string>
+    <string name="stop">stop</string>
+
+    <!-- bottom_menu -->
+
+    <string name="home">home</string>
+    <string name="feed">Emergencies</string>
+    <string name="inbox">inbox</string>
+    <string name="notifications">notifications</string>
+
+
+
+
+
+</resources>

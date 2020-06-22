@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/linearlayout_notif"
+                android:orientation="horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/elevating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/picture_type"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <TextView
+                    android:padding="15dp"
+                    android:id="@+id/notifContent"
+                    android:text="hello mother fuckers qweasdjkhdsajkh ashasjkdhajksdhajkdhasjkdhasjkdhasjkdh"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

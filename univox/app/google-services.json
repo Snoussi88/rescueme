@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "212284666599",
+    "firebase_url": "https://univox-c49c0.firebaseio.com",
+    "project_id": "univox-c49c0",
+    "storage_bucket": "univox-c49c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212284666599:android:ef2ee77c0173d43637a842",
+        "android_client_info": {
+          "package_name": "com.snoussi.univox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212284666599-8cf1s84ltgrt738t9a0uv6b5d8uqu0bk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.snoussi.univox",
+            "certificate_hash": "0dd03b313f31c93d39c324b280962e58fdb9f743"
+          }
+        },
+        {
+          "client_id": "212284666599-b53u51n1fqpbeqo83c5at48l2fd0pigv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdoDgt2mftaxRX0C2KggTbiHF1Bb2ewKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212284666599-b53u51n1fqpbeqo83c5at48l2fd0pigv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

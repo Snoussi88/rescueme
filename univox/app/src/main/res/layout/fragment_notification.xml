@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:tools="http://schemas.android.com/tools">
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="40dp">
+            <RelativeLayout
+                android:id="@+id/filter1"
+                android:layout_marginLeft="50dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+                  <ImageView
+                      android:src="@drawable/ic_people_black_24dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/filter2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+                  <ImageView
+                      android:src="@drawable/ic_location_on_black_24dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/filter3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+                  <ImageView
+                      android:src="@drawable/ic_books"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"/>
+            </RelativeLayout>
+      </LinearLayout>
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/notifRecycler"
+          android:layout_width="match_parent"
+          android:layout_height="470dp"/>
+
+
+</LinearLayout>

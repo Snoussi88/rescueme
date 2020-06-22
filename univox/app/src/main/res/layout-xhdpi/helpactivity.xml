@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/card_bg"
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_mountain"
+            android:id="@+id/picture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+
+        <TextView
+            android:layout_toEndOf="@+id/picture"
+            android:textColor="@color/blueshade"
+            android:padding="10dp"
+            android:textSize="19sp"
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/connected" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_below="@id/map2"
+        android:id="@+id/start"
+        android:text="@string/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@id/start"
+        android:layout_below="@+id/map2"
+        android:id="@+id/stop"
+        android:text="@string/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_below="@+id/map2"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/stop"
+        android:text="@string/help"
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.fragment.app.FragmentContainerView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/map2"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        tools:context=".HelpActivity"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_below="@+id/start"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chat_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/sendmessage"
+            android:textSize="20sp"
+            android:background="@drawable/view_focus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp"
+            android:layout_height="wrap_content"
+            android:layout_width="300dp" />
+
+        <ImageView
+            android:id="@+id/sendbutt23"
+            android:layout_width="25dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_send_black_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+        <RelativeLayout
+            android:elevation="30dp"
+            android:visibility="invisible"
+            android:id="@+id/relativelayout"
+            android:padding="15dp"
+            android:background="@drawable/elevating"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/text_title"
+                    android:padding="10dp"
+                    android:textSize="19sp"
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/clickonstart" />
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
